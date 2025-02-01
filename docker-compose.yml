@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  practice-bot:
+    build: .
+    container_name: aiogram-practice-bot
+    env_file:
+      - .env
+    volumes:
+      - .:/app
